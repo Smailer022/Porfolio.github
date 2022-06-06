@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="/img/programmer (2).png" alt="Logo" id="logo">
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about-me" class="nav-link">Sobre mi</a></li>
+                <li><a href="#projects-title" class="nav-link">Trabajos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="container">
+        <section id="welcome-section">
+            <div class="showcase">
+                <video id="video" src="/img/Code Showcase 1.mp4" autoplay loop muted></video>
+            </div>
+            <div class="welcome-title">
+                <h1>Hola, soy Smailer.</h1>
+                <span class="welcome-span">Frontend Developer</span>
+            </div>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="about-container">
+                <div class="img-about">
+                    <img src="/img/IMG 1 unsplash.jpg" alt="Yo" id="img-about">
+                </div>
+                <article>
+                    <div class="about-h2">
+                        <h2><span>Acerca de mi</span></h2>
+                    </div>
+                    <p class="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eius
+                        suscipit iure
+                        aspernatur itaque unde nam inventore quod ipsum eos tenetur molestias fugit obcaecati aliquam
+                        voluptatum officiis, ea natus quia.</p>
+                    <p class="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eius
+                        suscipit iure
+                        aspernatur itaque unde nam inventore quod ipsum eos tenetur molestias fugit obcaecati aliquam
+                        voluptatum officiis, ea natus quia.</p>
+                    <p class="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eius
+                        suscipit iure
+                        aspernatur itaque unde nam inventore quod ipsum eos tenetur molestias fugit obcaecati aliquam
+                        voluptatum officiis, ea natus quia.</p>
+                    <p class="about-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium eius
+                        suscipit iure
+                        aspernatur itaque unde nam inventore quod ipsum eos tenetur molestias fugit obcaecati aliquam
+                        voluptatum officiis, ea natus quia.</p>
+                </article>
+            </div>
+        </section>
+        <div class="projects-title" id="projects-title">
+            <h2>Proyectos</h2>
+        </div>
+        <section id="projects">
+            <a href="https://landing-page-github-io-psi.vercel.app/" class="project-title" id="profile-link"
+                target="_blank">
+                <img src="/img/Landing Page.png" alt="Landing-Page" id="img-projects">
+                <p class="project-text">Landing Page</p>
+            </a>
+            <a href="#" class="project-title" id="profile-link" target="_blank">
+                <img src="/img/Formulario.png" alt="Formulario" id="img-projects">
+                <p class="project-text">Formulario</p>
+            </a>
+            <a href="#" class="project-title" id="profile-link" target="_black">
+                <img src="/img/Documentation Page.png" alt="Documentation-page" id="img-projects">
+                <p class="project-text">Documentation Page</p>
+            </a>
+            <a href="#" class="project-title" id="profile-link" target="_blank">
+                <img src="/img/Tribute Page.png" alt="Tribute-Page" id="img-projects">
+                <p class="project-text">Tribute Page</p>
+            </a>
+        </section>
+
+        <section id="contact">
+            <div class="contact-h2">
+                <h2>Contacto</h2>
+            </div>
+            <form action="" method="post" id="form">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Nombre Completo" required>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="textarea"></label>
+                <textarea name="textarea" id="textarea" cols="1" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                <button id="submit" value="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <span>© Copyright 2022. Todos los derechos reservados.</span>
+        </footer>
+    </main>
+</body>
+
+</html>

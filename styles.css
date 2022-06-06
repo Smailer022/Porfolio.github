@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 235, 1);
+}
+
+#logo {
+    width: 70px;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 50, 0.9);
+    padding: 3px 70px;
+    z-index: 10;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(234, 74, 59, 0.9);
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+#welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 50, 0.6);
+}
+
+.welcome-title {
+    /* position: absolute;
+    top: 35%;
+    right: 35%; */
+    padding-top: 300px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+.welcome-span {
+    letter-spacing: 3px;
+    color: rgb(243, 82, 68, 1);
+}
+
+#video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.about-me {
+    text-align: center;
+    padding: 230px 60px 90px 60px;
+    width: 100%;
+    background-color: rgb(235, 235, 235, 1);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#img-about {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+.about-h2 {
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* .about-h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #303841;
+    width: 150px;
+    height: 1px;
+} */
+
+.about-p {
+    text-align: justify;
+    padding: 7px 0;
+}
+
+.projects-title {
+    text-align: center;
+    padding: 100px 0;
+    font-size: 35px;
+    background-color: rgb(235, 235, 235, 1);
+    font-weight: bold;
+}
+
+.projects-title::after {
+    content: "";
+    display: inline-block;
+    background-color: #303841;
+    width: 150px;
+    height: 2px;
+}
+
+#img-projects {
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects {
+    text-align: center;
+    padding: 40px 70px;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    background-color: rgb(235, 235, 235, 1);
+}
+
+.project-title {
+    border: 2px solid;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgb(0 0 0);
+}
+
+.project-text {
+    text-decoration: none;
+    padding: 3px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+a {
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.1);
+}
+
+a:hover {
+    color: #000000;
+    transition: 0.6s ease-in;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-h2 {
+    width: 100%;
+    text-align: center;
+    padding: 120px 0 50px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.contact-h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #303841;
+    width: 150px;
+    height: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input {
+    width: 35%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border-color: rgb(235, 235, 235, 1);
+    font-weight: bold;
+}
+
+textarea {
+    width: 35%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    resize: vertical;
+    font-weight: bold;
+}
+
+#submit {
+    width: 10%;
+    padding: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: rgb(27, 27, 50, 0.1);
+}
+
+#submit:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(147, 168, 172, 0.4);
+    box-shadow: 1px 1px 1px rgb(0 0 0);
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    padding: 7px 0;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(27, 27, 50, 0.9);
+}
